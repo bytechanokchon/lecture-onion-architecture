@@ -282,7 +282,7 @@ BankAccountRespository.cs
 
 จะพบว่า business rule นี้ไม่ใช่กฏของ customer โดยตรง (ลูกค้าถูกระงับบัญชี ไม่ได้หมายความว่า customer object มีข้อผิดพลาด) แต่เป็นกฏของ การสั่งซื้อสินค้า ที่เมื่อผู้ใช้ถูกระงับบัญชีจะไม่สามารถสั่งซื้อได้
 
-## การตัดสินใจว่า requirement เป็น cross-entity rule หรือ self-contained rule
+### การตัดสินใจว่า requirement เป็น cross-entity rule หรือ self-contained rule
 - **Self-contained rule** กฏที่ <mark>Entity หรือ Value Object นั้น ๆ สามารถตรวจสอบได้ด้วยตัวเองได้ โดยไม่ต้องรู้ข้อมูลจากแหล่งอื่น</mark>
 - **Cross-entity rule** กฏที่ <mark>ต้องใช้ข้อมูลจากหลาย entity หรือ หลายโดนเมนย่อย มาจัดสินใจ</mark>อยู่นอก entity เช่น Domain service
 
